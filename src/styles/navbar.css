@@ -31,6 +31,14 @@ nav ul li {
   padding-left: 4rem;
   height: 96px;
 }
+nav ul li a:hover {
+  border-bottom: white 1px solid;
+  border-bottom-width: 3px;
+}
+nav ul li .onPage {
+  border-bottom: white 1px solid;
+  border-bottom-width: 3px;
+}
 nav ul li a {
   text-decoration: none;
   color: #FFFFFF;
@@ -38,6 +46,7 @@ nav ul li a {
   font-size: 16px;
   position: absolute;
   margin-top: 2.2rem;
+  padding-bottom: 19%;
 }
 nav ul li a b {
   font-weight: 700;

@@ -1,0 +1,15 @@
+.planets-section {
+  display: flex;
+  background-color: beige;
+  width: 83%;
+}
+
+.planet {
+  background-color: azure;
+  flex: 1;
+}
+
+.planet-details {
+  background-color: aqua;
+  flex: 1;
+}/*# sourceMappingURL=destination.css.map */

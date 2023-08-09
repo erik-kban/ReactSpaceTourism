@@ -5,6 +5,7 @@ body {
   margin: 0;
   background-image: url("../assets/home/background-home-desktop.jpg");
   height: 100vh;
+  background-color: black;
 }
 
 /* TABLET VIEW */
@@ -15,8 +16,11 @@ body {
 }
 /* MOBILE VIEW */
 @media only screen and (max-width: 375px) {
+  html {
+    height: 100vh !important;
+  }
   body {
     max-width: 200% !important;
-    height: 200% !important;
+    height: 100vh !important;
   }
 }/*# sourceMappingURL=body.css.map */

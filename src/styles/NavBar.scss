@@ -36,6 +36,16 @@ nav {
             padding-left: 4rem;
             height: 96px;
 
+            a:hover {
+                border-bottom: white 1px solid;
+                border-bottom-width: 3px;
+            }
+
+            .onPage {
+                border-bottom: white 1px solid;
+                border-bottom-width: 3px;
+            }
+
             a {
                 text-decoration: none;
                 color: $white-color;
@@ -43,6 +53,7 @@ nav {
                 font-size: $navtext-size;
                 position: absolute;
                 margin-top: 2.2rem;
+                padding-bottom: 19%;
 
                 b {
                     font-weight: 700;
@@ -81,11 +92,12 @@ nav {
         hr {
             display: none;
         }
+
         ul {
             li {
                 display: none;
             }
-            
+
         }
     }
 }
