@@ -1,0 +1,127 @@
+$secondary-color: #D0D6F9;
+$barlow-font-condensed: "Barlow Condensed", "sans-serif";
+$heading5-size: 28px;
+$barlow-font: "Barlow", "sans-serif";
+$bodytext-size: 18px;
+$bellefair-font: "Bellefair", "sans-serif";
+$white-color: #FFFFFF;
+$heading1-size: 150px;
+$navtext-size: 16px;
+
+section {
+    display: flex;
+    width: 55%;
+    margin-top: 5rem;
+    margin-left: 8rem;
+
+    .main-description {
+        flex-direction: column;
+
+        .heading5 {
+            color: $secondary-color;
+            font-family: $barlow-font-condensed;
+            font-size: $heading5-size;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 4.725px;
+        }
+
+        p {
+            width: 444px;
+            color: $secondary-color;
+            font-family: $barlow-font;
+            font-size: $bodytext-size;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            /* 177.778% */
+        }
+
+        .heading1 {
+            font-family: $bellefair-font;
+            color: $white-color;
+            font-size: $heading1-size;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    h1 {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    aside {
+        margin-left: 18rem;
+        margin-top: 10rem;
+    }
+}
+
+/* TABLET VIEW */
+
+@media only screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+        width: 75%;
+        margin-top: 5rem;
+        margin-left: 6rem;
+
+        .heading5 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        aside {
+            margin-left: 12rem;
+            margin-top: 3rem;
+        }
+    }
+}
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width: 375px) {
+
+    body {
+        max-width: fit-content;
+        height: 100vh !important;
+    }
+    
+    section {
+        margin: 0 !important;
+
+        .heading5 {
+            font-size: $navtext-size !important;
+            width: 180% !important;
+            margin-top: 4rem;
+        }
+
+        .heading1 {
+            font-size: 80px !important;
+            width: 170% !important;
+            text-align: center;
+        }
+
+        p {
+            width: 175% !important;
+            font-size: 15px !important;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        aside {
+            margin: 0 !important;
+            margin-top: 2rem !important;
+            width: 136% !important;
+            text-align: center;
+        }
+    }
+}
